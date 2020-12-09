@@ -4,4 +4,4 @@
 
 - [ ] Frontend
 - [ ] Backend
-- [ ] Configuracion General
+- [ ] Configuración General
