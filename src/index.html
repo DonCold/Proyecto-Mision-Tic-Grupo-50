@@ -4,225 +4,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Workshop 1</title>
-    <link rel="stylesheet" href="./styles/style.css">
+
+    <!-- Icono -->
+    <link rel="shortcut icon" href="https://cdn.icon-icons.com/icons2/1642/PNG/128/moviefilmclipentertainmentvideo_109800.png" type="image/x-icon">
+
+    <!-- CDN Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- CDN Font Awesome -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- Archivo CSS propio -->
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <title>Entretenimiento</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="header">
-            <div class="container-menu">
-                <div class="container-logo">
-                    <h1 class="site-title">Workshop 1</h1>
-                </div>
-                <nav class="nav-list">
-                    <ul class="main-menu">
-                        <li class="main-menu__item">
-                            <a href="#" class="main-menu__link">Inicio</a>
-                        </li>
-                        <li class="main-menu__item">
-                            <a href="#" class="main-menu__link">Servicios</a>
-                        </li>
-                        <li class="main-menu__item">
-                            <a href="#" class="main-menu__link">Noticias</a>
-                        </li>
-                        <li class="main-menu__item">
-                            <a href="#" class="main-menu__link">Equipo</a>
-                        </li>
-                    </ul>
-                </nav>
+        <header class="row">
+            <!-- Columna del titulo -->
+            <div class="col-6 titulo text-center">
+                <h1>Entretenimiento</h1>
             </div>
-            <div class="container-imagen">
-                <h2 class="image-text">here is an image</h2>
+            <!-- Columna de la navegacion -->
+            <div class="col-6 navegacion">
+                <ul class="nav d-flex justify-content-center align-content-center flex-wrap">
+                    <li class="nav-item">
+                        <a class="nav-link enlace active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link enlace" href="#servicio">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link enlace" href="#noticia">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link enlace" href="#equipo">Equipo</a>
+                    </li>
+                </ul>
             </div>
-        </div>
-        <div class="section-1">
-            <p class="section-text">Section 1</p>
-            <div class="col-3">
-                <p>
-                    <i class="fas fa-ambulance" style="font-size:200px"></i>
-                </p>
-                <div class="service-content">
-                    <h1>
-                        Servicio 1
-                    </h1>
-                    <p class="service-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste corporis odio reiciendis molestias commodi cumque earum, voluptates
-                        autem, velit quidem enim. Distinctio soluta culpa esse ad illo deleniti id dignissimos!
-                    </p>
-                </div>
-            </div>
-            <div class="col-3">
-                <p>
-                    <i class="fas fa-ambulance" style="font-size:200px"></i>
-                </p>
-                <div class="service-content">
-
-                    <h1>
-                        Servicio 1
-                    </h1>
-                    <p class="service-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste corporis odio reiciendis molestias commodi cumque earum, voluptates
-                        autem, velit quidem enim. Distinctio soluta culpa esse ad illo deleniti id dignissimos!
-                    </p>
-                </div>
-            </div>
-            <div class="col-3">
-                <p>
-
-                    <i class="fas fa-ambulance" style="font-size:200px"></i>
-                </p>
-                <div class="service-content">
-
-                    <h1>
-                        Servicio 1
-                    </h1>
-                    <p class="service-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste corporis odio reiciendis molestias commodi cumque earum, voluptates
-                        autem, velit quidem enim. Distinctio soluta culpa esse ad illo deleniti id dignissimos!
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="section-2">
-            <p class="section-text">Section 2</p>
-            <div class="section-news">
-                <div class="news">
-                    <div class="news-data">
-                        <div class="news-image">
-                            <i class="fas fa-ambulance news-logo" style="font-size:150px"></i>
-                        </div>
-                        <div class="news-text">
-                            <h2 class="news-title">Noticia 1</h2>
-                            <hr>
-                            <p class="news-info" style="margin:0; padding:0;">Lorem, ipsum dolor sit amet consectetur adipisicing
-                                elit. Esse rem itaque mollitia dicta nesciunt corrupti temporibus ratione deserunt excepturi
-                                quas enim ab, facilis delectus, doloremque a optio! Sit, quae consequuntur.</p>
-                            <span class="news-url"><a href="#">Leer noticia completa >></a></span>
-                        </div>
-                    </div>
-                    <div class="news-data">
-                        <div class="news-image">
-                            <i class="fas fa-ambulance news-logo" style="font-size:150px"></i>
-                        </div>
-                        <div class="news-text">
-                            <h2 class="news-title">Noticia 1</h2>
-                            <hr>
-                            <p class="news-info" style="margin:0; padding:0;">Lorem, ipsum dolor sit amet consectetur adipisicing
-                                elit. Esse rem itaque mollitia dicta nesciunt corrupti temporibus ratione deserunt excepturi
-                                quas enim ab, facilis delectus, doloremque a optio! Sit, quae consequuntur.</p>
-                            <span class="news-url"><a href="#">Leer noticia completa >></a></span> </div>
-                    </div>
-                </div>
-                <div class="news">
-                    <div class="news-data">
-
-                        <div class="news-image">
-                            <i class="fas fa-ambulance news-logo" style="font-size:150px"></i>
-                        </div>
-                        <div class="news-text">
-                            <h2 class="news-title">Noticia 1</h2>
-                            <hr>
-                            <p class="news-info" style="margin:0; padding:0;">Lorem, ipsum dolor sit amet consectetur adipisicing
-                                elit. Esse rem itaque mollitia dicta nesciunt corrupti temporibus ratione deserunt excepturi
-                                quas enim ab, facilis delectus, doloremque a optio! Sit, quae consequuntur.</p>
-                            <span class="news-url"><a href="#">Leer noticia completa >></a></span> </div>
-                    </div>
-                    <div class="news-data">
-
-                        <div class="news-image">
-                            <i class="fas fa-ambulance news-logo" style="font-size:150px"></i>
-                        </div>
-                        <div class="news-text">
-                            <h2 class="news-title">Noticia 1</h2>
-                            <hr>
-                            <p class="news-info" style="margin:0; padding:0;">Lorem, ipsum dolor sit amet consectetur adipisicing
-                                elit. Esse rem itaque mollitia dicta nesciunt corrupti temporibus ratione deserunt excepturi
-                                quas enim ab, facilis delectus, doloremque a optio! Sit, quae consequuntur.</p>
-                            <span class="news-url"><a href="#">Leer noticia completa >></a></span> </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section-3">
-            <p class="section-text">Section 3</p>
-            <div class="col-5">
-                    <p>
-                        <i class="fas fa-ambulance" style="font-size:150px"></i>
-                    </p>
-                    <div class="service-content">
-                        <h2>
-                            Daniel Duque
-                        </h2>
-                        <p class="service-text memebers">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste corporis odio reiciendis molestias commodi cumque earum, voluptates
-                            autem, velit quidem enim. Distinctio soluta culpa esse ad illo deleniti id dignissimos!
-                        </p>
-                    </div>
-                </div>
-            <div class="col-5">
-                    <p>
-                        <i class="fas fa-ambulance" style="font-size:150px"></i>
-                    </p>
-                    <div class="service-content">
-                        <h2>
-                            Daniel Duque
-                        </h2>
-                        <p class="service-text memebers">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste corporis odio reiciendis molestias commodi cumque earum, voluptates
-                            autem, velit quidem enim. Distinctio soluta culpa esse ad illo deleniti id dignissimos!
-                        </p>
-                    </div>
-                </div>
-            <div class="col-5">
-                    <p>
-                        <i class="fas fa-ambulance" style="font-size:150px"></i>
-                    </p>
-                    <div class="service-content">
-                        <h2>
-                            Daniel Duque
-                        </h2>
-                        <p class="service-text memebers">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste corporis odio reiciendis molestias commodi cumque earum, voluptates
-                            autem, velit quidem enim. Distinctio soluta culpa esse ad illo deleniti id dignissimos!
-                        </p>
-                    </div>
-                </div>
-            <div class="col-5">
-                    <p>
-                        <i class="fas fa-ambulance" style="font-size:150px"></i>
-                    </p>
-                    <div class="service-content">
-                        <h2>
-                            Daniel Duque
-                        </h2>
-                        <p class="service-text memebers">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste corporis odio reiciendis molestias commodi cumque earum, voluptates
-                            autem, velit quidem enim. Distinctio soluta culpa esse ad illo deleniti id dignissimos!
-                        </p>
-                    </div>
-                </div>
-            <div class="col-5">
-                    <p>
-                        <i class="fas fa-ambulance" style="font-size:150px"></i>
-                    </p>
-                    <div class="service-content">
-                        <h2>
-                            Daniel Duque
-                        </h2>
-                        <p class="service-text memebers">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste corporis odio reiciendis molestias commodi cumque earum, voluptates
-                            autem, velit quidem enim. Distinctio soluta culpa esse ad illo deleniti id dignissimos!
-                        </p>
-                    </div>
-                </div>
-        </div>
-        <footer class="footer">
-            <p class="section-text">Section Footer</p>
-        </footer>
+        </header>
     </div>
+    <!-- Columna del Banner -->
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-12 banner">
+                <i class="fas fa-ambulance" style="font-size:200px"></i>
+                <br>
+                banner
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- Parte del contenido principal - Servicios y Noticias -->
+    <div class="container">
+        <main>
+            <!-- Servicios -->
+            <div class="row" id="servicio">
+                <div class="col-4 servicio">
+                    <i class="fas fa-ambulance" style="font-size:200px"></i>
+                    <br>
+                    Servicio 1
+                </div>
+                <div class="col-4 servicio">
+                    <i class="fas fa-ambulance" style="font-size:200px"></i>
+                    <br>
+                    Servicio 2
+                </div>
+                <div class="col-4 servicio">
+                    <i class="fas fa-ambulance" style="font-size:200px"></i>
+                    <br>
+                    Servicio 3
+                </div>
+            </div>
+            <br>
+            <!-- Noticias -->
+            <div class="row" id="noticia">
+                <div class="col-6 noticia">
+                    <i class="fas fa-ambulance" style="font-size:200px"></i>
+                    <br>
+                    Noticia 1
+                </div>
+                <div class="col-6 noticia">
+                    <i class="fas fa-ambulance" style="font-size:200px"></i>
+                    <br>
+                    Noticia 2
+                </div>
+                <div class="col-6 noticia">
+                    <i class="fas fa-ambulance" style="font-size:200px"></i>
+                    <br>
+                    Noticia 3
+                </div>
+                <div class="col-6 noticia">
+                    <i class="fas fa-ambulance" style="font-size:200px"></i>
+                    <br>
+                    Noticia 4
+                </div>
+            </div>
+        </main>
+    </div>
+    <br>
+    <!-- Parte de Equipos -->
+    <div class="row d-flex justify-content-center align-content-center flex-wrap" id="equipo">
+        <div class="col-2 equipo">
+            <i class="fas fa-ambulance" style="font-size:150px"></i>
+            <br>
+            Compañero 1
+        </div>
+        <div class="col-2 equipo">
+            <i class="fas fa-ambulance" style="font-size:150px"></i>
+            <br>
+            Compañero 2
+        </div>
+        <div class="col-2 equipo">
+            <i class="fas fa-ambulance" style="font-size:150px"></i>
+            <br>
+            Compañero 3
+        </div>
+        <div class="col-2 equipo">
+            <i class="fas fa-ambulance" style="font-size:150px"></i>
+            <br>
+            Compañero 4
+        </div>
+        <div class="col-2 equipo">
+            <i class="fas fa-ambulance" style="font-size:150px"></i>
+            <br>
+            Compañero 5
+        </div>
+    </div>
+    <br>
+    <!-- Parte del Footer -->
+    <div class="container footer">
+        <div class="row">
+            <div class="col-12">
+                <i class="fas fa-ambulance" style="font-size:200px"></i>
+                <br>
+                Footer
+            </div>
+        </div>
+    </div>
+    <!-- CDN Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 
 </html>
