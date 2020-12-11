@@ -1,7 +1,9 @@
 /* Parte Titulo */
 
 .titulo {
+    padding: 1px;
     background-color: #F0FFFF;
+    font-family: 'Langar', cursive;
 }
 
 /* Parte Navegacion */
@@ -16,10 +18,14 @@
     color: rgb(0, 0, 0);
 }
 
+.enlace:hover {
+    color: rgb(140, 137, 137);
+}
+
 /* Parte Banner */
 
 .banner {
-    background-color: #00FFFF;
+    background-color: #ffffff;
 }
 
 /* Parte Servicios */
