@@ -18,6 +18,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
 
     <!-- Archivo CSS propio -->
     <link rel="stylesheet" href="./styles/style.css">
@@ -36,7 +37,7 @@
         <div class="collapse navbar-collapse justify-content-end " id="navbarNav ">
             <ul class="navbar-nav ">
                 <li class="nav-item">
-                    <a class="nav-link enlace active" aria-current="page" href="#">Inicio</a>
+                    <a class="nav-link enlace" aria-current="page" href="#">Inicio</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link enlace" href="#servicio">Servicios</a>
@@ -77,7 +78,10 @@
     <div class="container">
         <main>
             <!-- Servicios -->
-            <div class="row" id="servicio">
+            <div class="container subTitulo" id="servicio">
+                <h3>Nuestros Servicios</h3>
+            </div>
+            <div class="row">
                 <div class="col-4 servicio">
                     <i class="fas fa-ambulance" style="font-size:200px"></i>
                     <br>
@@ -96,7 +100,10 @@
             </div>
             <br>
             <!-- Noticias -->
-            <div class="row" id="noticia">
+            <div class="container subTitulo" id="noticia">
+                <h3>Últimas Noticias</h3>
+            </div>
+            <div class="row">
                 <div class="col-6 noticia">
                     <i class="fas fa-ambulance" style="font-size:200px"></i>
                     <br>
@@ -121,9 +128,12 @@
         </main>
     </div>
     <br>
-    <!-- Parte de Equipos ======================= Necesario: Foto/Rol/Descripcion -->
+    <!-- Parte de Equipos ======================= Necesario: Foto/Nombre/Rol/Descripcion -->
+    <div class="container subTitulo" id="equipo">
+        <h3>Nuestro Equipo</h3>
+    </div>
     <div class="container">
-        <div class="row d-flex justify-content-center" id="equipo">
+        <div class="row d-flex justify-content-center">
             <div class="col text-center equipo">
                 <br>
                 <a target="_blank" href="https://github.com/LuisFOsG">
@@ -131,8 +141,8 @@
                 </a>
                 <br>
                 <h5 class="nombre">Luis F. Osorio</h5>
-                <p class="rol">Desarrollador Backend</p>
-                <p>Estudiante de Ingeniera Informatica, a punto de inicar el 5to semestre.</p>
+                <p class="rol">Desarrollador Back-end</p>
+                <p>Estudiante de Ingeniería Informática, a punto de iniciar el 5to semestre.</p>
             </div>
             <div class="col text-center equipo">
                 <br>
@@ -168,10 +178,17 @@
     <!-- Parte del Footer -->
     <div class="container footer">
         <div class="row">
-            <div class="col-12">
-                <i class="fas fa-ambulance" style="font-size:200px"></i>
+            <div class="col-10 text-center">
                 <br>
-                Footer
+                Inserten Texto Motivador.
+            </div>
+            <!-- Enlaces de Interes -->
+            <div class="col-2">
+                <div class="d-flex flex-row-reverse footerEnlaces">
+                    <a target="_blank" href="https://github.com/DonCold/Proyecto-Mision-Tic-Grupo-50">
+                        <i class="fab fa-github footerEnlaces"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
