@@ -1,3 +1,7 @@
+body{
+    background-color: #eeeeee;
+}
+
 /* Parte Titulo */
 
 .titulo {
@@ -12,7 +16,7 @@
 
 .enlace {
     font-size: 20px;
-    color: rgb(0, 0, 0);
+    color: #222831;
     font-family: 'PT Sans', sans-serif;
 }
 
@@ -30,11 +34,25 @@
 /* Parte Servicios */
 
 .servicio {
-    padding: 1em;
+    margin: 0 5px;
+    padding: 2em;
     border-radius: 5%;
+    /*border: 2px #eeeeee solid;*/
     text-align: center;
-    background-color: #7FFFD4;
+    background-color: #393e46;
+    color: #ffd369;
+    transition: 0.2s;
 }
+
+.col-4{
+    width: 32.23%;
+}
+
+.servicio:hover{
+    box-shadow: 3px 3px 3px 1px rgb(0, 0, 0, 0.2);
+    transform: scale(1.05, 1.05);
+}
+
 
 /* Parte Noticia */
 
@@ -42,22 +60,35 @@
     padding: 1em;
     text-align: center;
     border-radius: 3%;
-    border: 2px #fff solid;
-    background-color: #663399;
+    border: 2px #eeeeee solid;
+    background-color: #222831;
+    color: #eeeeee;
+    transition: 0.2;
+}
+
+.noticia:hover {
+    box-shadow: 1px 1px 1px 1px rgb(0, 0, 0, 0.2);
+    transform: scale(1.05, 1.05);
 }
 
 /* Parte Equipo */
 
 .equipo {
     border-radius: 5%;
-    border: 2px #fff solid;
-    background-color: #FFB194;
+    border: 2px #eeeeee solid;
+    background-color: #ffd369;
 }
 
 .foto {
     border-radius: 150%;
     width: 200px;
     height: 200px;
+    transition: 0.2;
+}
+
+.foto:hover{
+    box-shadow: 1px 1px 1px 1px rgb(0, 0, 0, 0.2);
+    transform: scale(1.03, 1.03);
 }
 
 .nombre {
@@ -66,12 +97,12 @@
 
 .rol {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #727272;
+    color: #393e46;
 }
 
 /* Parte Footer */
 
 .footer {
-    background-color: #9ACD32;
-    color: white;
+    background-color: #222831;
+    color: #eeeeee;
 }
