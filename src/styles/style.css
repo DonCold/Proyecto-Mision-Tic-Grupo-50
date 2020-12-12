@@ -13,8 +13,8 @@
 }
 
 .enlace {
-    padding: 1em;
     font-size: 20px;
+    padding: 1em;
     color: rgb(0, 0, 0);
     font-family: 'PT Sans', sans-serif;
 }
@@ -33,13 +33,19 @@
 /* Parte Servicios */
 
 .servicio {
+    padding: 1em;
+    border-radius: 5%;
+    text-align: center;
     background-color: #7FFFD4;
 }
-
 
 /* Parte Noticia */
 
 .noticia {
+    padding: 1em;
+    text-align: center;
+    border-radius: 3%;
+    border: 2px #fff solid;
     background-color: #663399;
 }
 
@@ -59,6 +65,11 @@
 
 .nombre {
     font-family: 'Langar', cursive;
+}
+
+.rol {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #727272;
 }
 
 /* Parte Footer */

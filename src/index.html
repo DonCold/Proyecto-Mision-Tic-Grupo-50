@@ -26,29 +26,31 @@
 </head>
 
 <body>
-    <header class="row">
-        <!-- Columna del titulo -->
-        <div class="col-6 titulo text-center">
-            <h1>Entretenimiento</h1>
-        </div>
-        <!-- Columna de la navegacion -->
-        <div class="col-6 navegacion">
-            <ul class="nav d-flex justify-content-center align-content-center flex-wrap">
-                <li class="nav-item">
-                    <a class="nav-link enlace active" aria-current="page" href="#">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link enlace" href="#servicio">Servicios</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link enlace" href="#noticia">Noticias</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link enlace" href="#equipo">Equipo</a>
-                </li>
-            </ul>
-        </div>
-    </header>
+    <div class="container">
+        <header class="row">
+            <!-- Columna del titulo -->
+            <div class="col titulo text-center">
+                <h1><img width="30" height="30" src="https://cdn.icon-icons.com/icons2/1525/PNG/512/976622-appliances-display-entertainment-system-sound-speakers-television-tv-set_106552.png"> Entretenimiento</h1>
+            </div>
+            <!-- Columna de la navegacion -->
+            <div class="col navegacion">
+                <ul class="nav d-flex justify-content-center align-content-center flex-wrap">
+                    <li class="nav-item">
+                        <a class="nav-link enlace active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link enlace" href="#servicio">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link enlace" href="#noticia">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link enlace" href="#equipo">Equipo</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+    </div>
     <!-- Columna del Banner -->
     <div class="container text-center">
         <div class="row">
@@ -126,40 +128,43 @@
         </main>
     </div>
     <br>
-    <!-- Parte de Equipos -->
-    <div class="row d-flex justify-content-center align-content-center flex-wrap" id="equipo">
-        <div class="col-2 text-center equipo">
-            <br>
-            <a target="_blank" href="https://github.com/LuisFOsG">
-                <img src="./images/fotoLuis.jpg" alt="Foto Luis" class="foto">
-            </a>
-            <br><br>
-            <h5 class="nombre">Luis F. Osorio</h5>
-            <p>Estudiante de Ingeniera Informatica, a punto de inicar el 5to semestre</p>
-        </div>
-        <div class="col-2 text-center equipo">
-            <br>
-            <i class="fas fa-ambulance" style="font-size:150px"></i>
-            <br>
-            Compañero 2
-        </div>
-        <div class="col-2 text-center equipo">
-            <br>
-            <i class="fas fa-ambulance" style="font-size:150px"></i>
-            <br>
-            Compañero 3
-        </div>
-        <div class="col-2 text-center equipo">
-            <br>
-            <i class="fas fa-ambulance" style="font-size:150px"></i>
-            <br>
-            Compañero 4
-        </div>
-        <div class="col-2 text-center equipo">
-            <br>
-            <i class="fas fa-ambulance" style="font-size:150px"></i>
-            <br>
-            Compañero 5
+    <!-- Parte de Equipos ======================= Necesario: Foto/Rol/Descripcion -->
+    <div class="container">
+        <div class="row d-flex justify-content-center" id="equipo">
+            <div class="col text-center equipo">
+                <br>
+                <a target="_blank" href="https://github.com/LuisFOsG">
+                    <img src="./images/fotoLuis.jpg" alt="Foto Luis" class="foto">
+                </a>
+                <br>
+                <h5 class="nombre">Luis F. Osorio</h5>
+                <p class="rol">Desarrollador Backend</p>
+                <p>Estudiante de Ingeniera Informatica, a punto de inicar el 5to semestre.</p>
+            </div>
+            <div class="col text-center equipo">
+                <br>
+                <i class="fas fa-ambulance" style="font-size:150px"></i>
+                <br>
+                Compañero 2
+            </div>
+            <div class="col text-center equipo">
+                <br>
+                <i class="fas fa-ambulance" style="font-size:150px"></i>
+                <br>
+                Compañero 3
+            </div>
+            <div class="col text-center equipo">
+                <br>
+                <i class="fas fa-ambulance" style="font-size:150px"></i>
+                <br>
+                Compañero 4
+            </div>
+            <div class="col text-center equipo">
+                <br>
+                <i class="fas fa-ambulance" style="font-size:150px"></i>
+                <br>
+                Compañero 5
+            </div>
         </div>
     </div>
     <br>
