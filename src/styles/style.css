@@ -1,8 +1,6 @@
 /* Parte Titulo */
 
 .titulo {
-    padding: 1px;
-    background-color: #F0FFFF;
     font-family: 'Langar', cursive;
 }
 
@@ -14,7 +12,6 @@
 
 .enlace {
     font-size: 20px;
-    padding: 1em;
     color: rgb(0, 0, 0);
     font-family: 'PT Sans', sans-serif;
 }
