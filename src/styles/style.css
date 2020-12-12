@@ -16,10 +16,12 @@
     padding: 1em;
     font-size: 20px;
     color: rgb(0, 0, 0);
+    font-family: 'PT Sans', sans-serif;
 }
 
 .enlace:hover {
     color: rgb(140, 137, 137);
+    font-family: 'PT Sans', sans-serif;
 }
 
 /* Parte Banner */
@@ -44,8 +46,19 @@
 /* Parte Equipo */
 
 .equipo {
-    border: 2px solid;
+    border-radius: 5%;
+    border: 2px #fff solid;
     background-color: #FFB194;
+}
+
+.foto {
+    border-radius: 150%;
+    width: 200px;
+    height: 200px;
+}
+
+.nombre {
+    font-family: 'Langar', cursive;
 }
 
 /* Parte Footer */
