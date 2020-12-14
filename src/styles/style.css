@@ -138,15 +138,18 @@ body {
 /* Parte Footer */
 
 .footer {
-    border-radius: 15% 15% 0px 0px;
-    background-color: #e0aaff;
-    color: #240046;
+    background: linear-gradient(-180deg, #1282DB, #011625);
+    border-radius: 25% 25% 0px 0px;
+    color: #fcfcfc;
 }
 
 .footerEnlaces {
+    padding: 10%;
+    padding-right: 50%;
     font-size: 50px;
-    color:#240046;
+    color:#fcfcfc;
     text-decoration: none;
+    align-self: center;
 }
 
 @media (min-width: 320px) and (max-width: 767px) { 
@@ -161,16 +164,22 @@ body {
     }
  }
 
-<<<<<<< Updated upstream
-=======
- 
->>>>>>> Stashed changes
  #containerEquipo{
     border:20px blue solid;
-
-
-<<<<<<< Updated upstream
  }
-=======
+
+ #footerTelefonos{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em;
+    justify-content: space-around;
+    align-self: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: small;
  }
->>>>>>> Stashed changes
+
+ .nombreTel{
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+    font-style: italic;
+ }
