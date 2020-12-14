@@ -1,6 +1,6 @@
 /* API */
 const API = "https://spaceflightnewsapi.net/api/v1/articles";
-var cantidadNoticias = ""; /* Maximo 10, si quiere dejarlo por defecto coloque solo "" */
+var cantidadNoticias = 4; /* Maximo 10, si quiere dejarlo por defecto coloque solo "" */
 
 /* Envia los datos a Vue */
 
@@ -42,7 +42,7 @@ async function buscarDatosAPI(){
 Vue.component("Noticia", {
     props: ["img", "url", "title", "public", "siteweb", "tag"],
     template: `
-    <div class="col-md-6 card noticia" style="max-width: 540px;">
+    <div class="col-md-6 card noticia">
         <a target="_blank" :href="url" class="textoNoticia">
             <div class="row g-0">
 

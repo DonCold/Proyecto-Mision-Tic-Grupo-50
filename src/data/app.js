@@ -34,9 +34,4 @@ const appEquipo = new Vue({
         foto5 : equipo[4].fot,
 
     },
-
-
-
-
-})
-
+});
