@@ -1,6 +1,6 @@
 /* API */
 const API = "https://spaceflightnewsapi.net/api/v1/articles";
-var cantidadNoticias = ""; /* Maximo 10, si quiere dejarlo por defecto coloque solo "" */
+var cantidadNoticias = 4; /* Maximo 10, si quiere dejarlo por defecto coloque solo "" */
 
 /* Envia los datos a Vue */
 
