@@ -146,45 +146,57 @@
             <!-- Cuadro Compañero 1 -->
             <div class="col text-center equipo">
                 <br>
-                <a target="_blank" href="https://github.com/LuisFOsG">
-                    <img src="./images/fotoLuis.jpg" alt="Foto Luis" class="foto">
+                <a target="_blank"  :href="dom1">
+                    <img :src="foto1" alt="Miembro 1" class="foto">
                 </a>
                 <br>
-                <h5 class="nombre">Luis F. Osorio</h5>
-                <p class="rol">Desarrollador Back-end</p>
-                <p>Estudiante de Ingeniería Informática, a punto de iniciar el 5to semestre.</p>
+                <h5 class="nombre" >{{nom1}}</h5>
+                <p class="rol">{{rol1}}</p>
+                <p>{{carac1}}</p>
             </div>
             <!-- Cuadro Compañero 2 -->
             <div class="col text-center equipo">
                 <br>
-                <a target="_blank" href="https://github.com/SergioMelendez99">
-                    <img src="./images/fotoSergio.jpg" alt="Foto Sergio" class="foto">
+                <a target="_blank" :href="dom2">
+                    <img :src="foto2" alt="Miembro 2" class="foto">
                 </a>
                 <br>
-                <h5 class="nombre">Sergio A. Meléndez</h5>
-                <p class="rol">Desarrollador Front-end</p>
-                <p>Estudiante de Ingenieria Civil, ya finalizando la carrera, en busca de practicas.</p>
+                <h5 class="nombre">{{nom2}}</h5>
+                <p class="rol">{{rol2}}</p>
+                <p>{{carac2}}</p>
             </div>
             <!-- Cuadro Compañero 3 -->
             <div class="col text-center equipo">
                 <br>
-                <i class="fas fa-ambulance" style="font-size:150px"></i>
+                <a target="_blank" :href="dom3">
+                    <img :src="foto3" alt="Miembro 3" class="foto">
+                </a>
                 <br>
-                Compañero 3
+                <h5 class="nombre">{{nom3}}</h5>
+                <p class="rol">{{rol3}}</p>
+                <p>{{carac3}}</p>
             </div>
             <!-- Cuadro Compañero 4 -->
             <div class="col text-center equipo">
                 <br>
-                <i class="fas fa-ambulance" style="font-size:150px"></i>
+                <a target="_blank" :href="dom4">
+                    <img :src="foto4" alt="Miembro 4" class="foto">
+                </a>
                 <br>
-                Compañero 4
+                <h5 class="nombre">{{nom4}}</h5>
+                <p class="rol">{{rol4}}</p>
+                <p>{{carac4}}</p>
             </div>
             <!-- Cuadro Compañero 5 -->
             <div class="col text-center equipo">
                 <br>
-                <i class="fas fa-ambulance" style="font-size:150px"></i>
+                <a target="_blank" :href="dom5">
+                    <img :src="foto5" alt="Miembro 5" class="foto">
+                </a>
                 <br>
-                Compañero 5
+                <h5 class="nombre">{{nom5}}</h5>
+                <p class="rol">{{rol5}}</p>
+                <p>{{carac5}}</p>
             </div>
         </div>
     </div>
@@ -211,7 +223,7 @@
     <!-- VueJS -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <!-- API -->
-    <script src="./api/api.js"></script>
+    <script src="./data/api.js"></script>
     <!-- JAVASCRIP -->
     <script type="text/javascript" src="./data/equipo.json"></script>
     <script type="text/javascript" src="./data/app.js"></script>
