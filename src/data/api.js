@@ -14,7 +14,7 @@ function pintarDatos(info){
         let fechaFormat = fecha.getDate() + "/"+ (parseInt(fecha.getMonth()) + 1) + "/" + fecha.getFullYear();
 
         let tag = info[i].tags[1];
-        tag = tag.charAt(0).toUpperCase() + tag.slice(1);
+        
 
         app.noticias.push({
             img: info[i].featured_image,
