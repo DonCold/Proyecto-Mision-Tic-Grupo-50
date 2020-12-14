@@ -14,7 +14,7 @@ function pintarDatos(info){
         let fechaFormat = fecha.getDate() + "/"+ (parseInt(fecha.getMonth()) + 1) + "/" + fecha.getFullYear();
 
         let tag = info[i].tags[1];
-        tag = tag.charAt(0).toUpperCase() + tag.slice(1);
+        
 
         app.noticias.push({
             img: info[i].featured_image,
@@ -42,7 +42,7 @@ async function buscarDatosAPI(){
 Vue.component("Noticia", {
     props: ["img", "url", "title", "public", "siteweb", "tag"],
     template: `
-    <div class="col-md-6 card noticia" style="max-width: 540px;">
+    <div class="col-md-6 card noticia">
         <a target="_blank" :href="url" class="textoNoticia">
             <div class="row g-0">
 
