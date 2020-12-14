@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Icono -->
-    <link rel="shortcut icon" href="https://cdn.icon-icons.com/icons2/1642/PNG/128/moviefilmclipentertainmentvideo_109800.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://cdn.icon-icons.com/icons2/1234/PNG/512/1492719123-rocket_83625.png" type="image/x-icon">
 
     <!-- CDN Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -19,6 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
 
     <!-- Archivo CSS propio -->
     <link rel="stylesheet" href="./styles/style.css">
@@ -96,50 +97,45 @@
                         <img src="./images/spacexLogo.png" alt="Logo SpaceX" class="logo">
                     </a>
                     <br>
-                    <p class="descripcionServicios">Es una empresa estadounidense de fabricación aeroespacial y de servicios de transporte espacial con residencia en Hawthorne (California). Fue fundada en 2002 por Elon Musk con el objetivo de reducir los costes de viajar al espacio para facilitar la colonización de Marte.</p> 
+                    <p class="descripcionServicios">Es una empresa estadounidense de fabricación aeroespacial y de servicios de transporte espacial con residencia en Hawthorne (California). Fue fundada en 2002 por Elon Musk con el objetivo de reducir los costes de viajar al espacio para facilitar la colonización de Marte.</p>
                 </div>
                 <div class="col servicio">
                     <a target="_blank" href="https://www.virgingalactic.com/">
                         <img src="./images/Virgin_Galactic_Logo.png" alt="Logo Virgin Galactic" class="logo">
                     </a>
                     <br>
-                    <p class="descripcionServicios">Es una empresa dentro de Virgin Group de Sir Richard Branson que planea proporcionar vuelos espaciales suborbitales tripulados, lanzamientos suborbitales para misiones científicas y lanzamientos orbitales para satélites pequeños.</p> 
+                    <p class="descripcionServicios">Es una empresa dentro de Virgin Group de Sir Richard Branson que planea proporcionar vuelos espaciales suborbitales tripulados, lanzamientos suborbitales para misiones científicas y lanzamientos orbitales para satélites pequeños.</p>
                 </div>
                 <div class="col servicio">
                     <a target="_blank" href="https://www.blueorigin.com/">
                         <img src="./images/favpng_logo-blue-origin-brand-industry-company.png" alt="Logo Blue Origin" class="logo">
                     </a>
                     <br>
-                    <p class="descripcionServicios">Es una empresa estadounidense de transporte aeroespacial fundada en el año 2000 por Jeff Bezos. Entre sus objetivos se encuentran los vuelos sub orbitales y orbitales, tanto para misiones oficiales de Estados Unidos, como para vuelos privados</p> 
+                    <p class="descripcionServicios">Es una empresa estadounidense de transporte aeroespacial fundada en el año 2000 por Jeff Bezos. Entre sus objetivos se encuentran los vuelos sub orbitales y orbitales, tanto para misiones oficiales de Estados Unidos, como para vuelos privados</p>
                 </div>
             </div>
             <br>
+
             <!-- Noticias -->
             <div class="container subTitulo" id="noticia">
                 <h3>Últimas Noticias</h3>
             </div>
-            <div class="row">
-                <div class="col-md-6 noticia">
-                    <i class="fas fa-ambulance" style="font-size:200px"></i>
-                    <br>
-                    Noticia 1
-                </div>
-                <div class="col-md-6 noticia">
-                    <i class="fas fa-ambulance" style="font-size:200px"></i>
-                    <br>
-                    Noticia 2
-                </div>
-                <div class="col-md-6 noticia">
-                    <i class="fas fa-ambulance" style="font-size:200px"></i>
-                    <br>
-                    Noticia 3
-                </div>
-                <div class="col-md-6 noticia">
-                    <i class="fas fa-ambulance" style="font-size:200px"></i>
-                    <br>
-                    Noticia 4
+            <div id="apinoticias">
+                <div class="container">
+                    <div class="row">
+                        <Noticia v-for="noticia in noticias"
+                            :img = "noticia.img"
+                            :key = "noticia.id"
+                            :url = "noticia.url"
+                            :title = "noticia.title"
+                            :public = "noticia.public"
+                            :siteweb = "noticia.siteweb"
+                            :tag = "noticia.tag"
+                        />
+                    </div>
                 </div>
             </div>
+
         </main>
     </div>
     <br>
@@ -218,6 +214,10 @@
     </div>
     <!-- CDN Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <!-- VueJS -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <!-- API -->
+    <script src="./api/api.js"></script>
 </body>
 
 </html>
