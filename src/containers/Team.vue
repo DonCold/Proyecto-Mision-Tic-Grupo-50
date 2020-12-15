@@ -1,7 +1,7 @@
 <template>
   <div class="row d-flex justify-content-center">
     <TeamCard v-for="miembro in miembros"
-      :key = "miembro.id"
+      :key = "miembro.codigo"
       :member = "miembro"
     />
   </div>
@@ -25,7 +25,7 @@ export default {
     separarMiembros(){
       for(let i=0;i<data.length;i++){
         this.miembros.push({
-          id: data[i].id,
+          codigo: data[i].id,
           nombre: data[i].nombre,
           rol: data[i].rol,
           descripcion: data[i].descrip,

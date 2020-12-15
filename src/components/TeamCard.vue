@@ -2,12 +2,12 @@
   <div class="col text-center equipo">
       <br>
       <a target="_blank"  :href="member.dom">
-          <img :src="member.image" :alt="member.nombre" class="foto">
+          <img :src="member.image" :alt="member.codigo" class="foto">
       </a>
       <br>
       <h5 class="nombre" >{{ member.nombre }}</h5>
       <p class="rol">{{ member.rol }}</p>
-      <p>{{ member.descripcion }}</p>
+      <p>{{ member.descripcion }} <span class="hidden">{{ member.codigo }}</span></p>
   </div>
 </template>
 
@@ -50,6 +50,10 @@ export default {
 .rol {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #66fcf1;
+}
+
+.hidden {
+    display: none;
 }
 
 </style>
