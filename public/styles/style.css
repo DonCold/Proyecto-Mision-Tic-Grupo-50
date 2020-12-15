@@ -84,22 +84,7 @@ body {
     color: #66fcf1;
 }
 
-/* Parte Footer */
-
-.footer {
-    background: linear-gradient(-180deg, #1282DB, #011625);
-    border-radius: 25% 25% 0px 0px;
-    color: #fcfcfc;
-}
-
-.footerEnlaces {
-    padding: 10%;
-    padding-right: 50%;
-    font-size: 50px;
-    color:#fcfcfc;
-    text-decoration: none;
-    align-self: center;
-}
+/* ajustes de @Media */
 
 @media (min-width: 320px) and (max-width: 767px) {
     .w-100 {
@@ -123,21 +108,4 @@ body {
         font-size: 1.3rem;
         text-shadow: 2px 2px 4px black;
     }
- }
-
-
- #footerTelefonos{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 2em;
-    justify-content: space-around;
-    align-self: center;
-    font-family: 'Open Sans', sans-serif;
-    font-size: small;
- }
-
- .nombreTel{
-    font-family: 'Open Sans', sans-serif;
-    font-size: large;
-    font-style: italic;
  }
