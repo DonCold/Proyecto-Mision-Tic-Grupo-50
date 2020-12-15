@@ -16,6 +16,11 @@
         <div class="container subTitulo" id="news">
             <h3>Últimas Noticias</h3>
         </div>
+        <div id="apinoticias" class="apinoticias">
+          <div class="container">
+            <News />
+          </div>
+        </div>
       </main>
     </div>
     <!-- Parte de Equipos -->
@@ -36,11 +41,13 @@
 </template>
 
 <script>
-
+/* Estaticos */
 import Navigation from './components/Navigation';
 import Banner from './components/Banner';
 import Services from './components/Services';
 import Footer from './components/Footer';
+/* Dinamicos */
+import News from './containers/News';
 
 export default {
   name: 'App',
@@ -48,7 +55,9 @@ export default {
     Navigation,
     Banner,
     Services,
-    Footer
+    Footer,
+    News
   },
 }
+
 </script>
