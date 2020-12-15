@@ -6,8 +6,7 @@
 
 <script>
     export default {
-        name: "TeamCard",
-        props: ['member']
+        name: "TeamCard"
     }
 </script>
 
