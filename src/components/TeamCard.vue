@@ -1,13 +1,13 @@
 <template>
   <div class="col text-center equipo">
       <br>
-      <a target="_blank"  :href="dom">
-          <img :src="foto" :alt="nombre" class="foto">
+      <a target="_blank"  :href="member.dom">
+          <img :src="member.image" :alt="member.nombre" class="foto">
       </a>
       <br>
-      <h5 class="nombre" >{{ nombre }}</h5>
-      <p class="rol">{{ rol }}</p>
-      <p>{{ descrip }}</p>
+      <h5 class="nombre" >{{ member.nombre }}</h5>
+      <p class="rol">{{ member.rol }}</p>
+      <p>{{ member.descripcion }}</p>
   </div>
 </template>
 
@@ -15,7 +15,7 @@
 
 export default {
   name: 'TeamCard',
-  props: ["nombre", "rol", "descrip", "dom", "foto"],
+  props: ["member"],
 }
 
 </script>

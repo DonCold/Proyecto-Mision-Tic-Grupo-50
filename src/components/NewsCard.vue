@@ -14,7 +14,7 @@
 
             <span class="badge bg-info text-dark">{{ tag }}</span>
 
-            <p class="card-text"><small class="text-muted">{{ publico }}</small></p>
+            <p class="card-text"><small class="text-muted">Publicado el {{ publico }}</small></p>
           </div>
         </div>
 
