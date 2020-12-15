@@ -68,4 +68,31 @@
     line-height: 3rem;
     text-shadow: 2px 2px 4px black;
 }
+
+/* ajustes de @Media */
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .w-100 {
+        height: 300px;
+    }
+ }
+
+ @media (min-width: 768px) and (max-width: 1023px) {
+    .w-100 {
+        height: 500px;
+    }
+    .carousel-item p{
+        color: #f72585;
+        font-family: 'Russo One', sans-serif;
+        font-size: 2rem;
+        text-shadow: 2px 2px 4px black;
+    }
+
+    .carousel-item h5{
+        font-family: 'Russo One', sans-serif;
+        font-size: 1.3rem;
+        text-shadow: 2px 2px 4px black;
+    }
+}
+
 </style>

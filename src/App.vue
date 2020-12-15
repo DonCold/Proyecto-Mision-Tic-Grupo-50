@@ -24,17 +24,16 @@
       </main>
     </div>
     <!-- Parte de Equipos -->
+    <br>
     <div class="container">
       <div class="container subTitulo" id="team">
         <h3>Nuestro Equipo</h3>
       </div>
     </div>
     <div class="container" id="containerEquipo">
-        <div class="row d-flex justify-content-center">
-            <div id="jsonequipo">
-            </div>
-        </div>
+        <Team />
     </div>
+    <br>
     <Footer />
   </div>
 
@@ -48,6 +47,7 @@ import Services from './components/Services';
 import Footer from './components/Footer';
 /* Dinamicos */
 import News from './containers/News';
+import Team from './containers/Team';
 
 export default {
   name: 'App',
@@ -56,7 +56,8 @@ export default {
     Banner,
     Services,
     Footer,
-    News
+    News,
+    Team
   },
 }
 

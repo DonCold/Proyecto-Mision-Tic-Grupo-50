@@ -1,15 +1,55 @@
 <template>
-    <div>
-
-    </div>
+  <div class="col text-center equipo">
+      <br>
+      <a target="_blank"  :href="dom">
+          <img :src="foto" :alt="nombre" class="foto">
+      </a>
+      <br>
+      <h5 class="nombre" >{{ nombre }}</h5>
+      <p class="rol">{{ rol }}</p>
+      <p>{{ descrip }}</p>
+  </div>
 </template>
 
 <script>
-    export default {
-        name: "TeamCard"
-    }
+
+export default {
+  name: 'TeamCard',
+  props: ["nombre", "rol", "descrip", "dom", "foto"],
+}
+
 </script>
 
+<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+/* Parte Equipo */
+
+.equipo {
+    border-radius: 5%;
+    border: 2px #212529 solid;
+    background-color: #3c096c;
+    color: #45a29e;
+}
+
+.foto {
+    border-radius: 150%;
+    width: 200px;
+    height: 200px;
+    transition: 0.2;
+}
+
+.foto:hover{
+    box-shadow: 1px 1px 1px 1px rgb(0, 0, 0, 0.2);
+    transform: scale(1.03, 1.03);
+}
+
+.nombre {
+    font-family: 'Langar', cursive;
+}
+
+.rol {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #66fcf1;
+}
 
 </style>
