@@ -2,11 +2,7 @@
   <div class="row d-flex justify-content-center">
     <TeamCard v-for="miembro in miembros"
       :key = "miembro.id"
-      :nombre = "miembro.nombre"
-      :rol = "miembro.rol"
-      :descrip = "miembro.descrip"
-      :dom = "miembro.dom"
-      :foto = "miembro.foto"
+      :member = "miembro"
     />
   </div>
 </template>
@@ -32,12 +28,11 @@ export default {
           id: data[i].id,
           nombre: data[i].nombre,
           rol: data[i].rol,
-          descrip: data[i].descrip,
+          descripcion: data[i].descrip,
           dom: data[i].dom,
-          foto: data[i].foto
+          image: data[i].foto
         });
       }
-      console.log(this.miembros);
     }
   },
   created() {
