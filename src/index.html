@@ -21,13 +21,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 
     <!-- Archivo CSS propio -->
     <link rel="stylesheet" href="./styles/style.css">
 
     <title>New Horizon</title>
+
 </head>
 
 <body>
@@ -36,6 +37,7 @@
         <div class="container-fluid">
             <!-- Columna del titulo -->
             <a class="navbar-brand titulo" href="# ">
+
                 <i class="fas fa-rocket"></i>
                 New Horizon
             </a>
@@ -72,26 +74,25 @@
             <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./images/banner1.jpg" class="d-block w-100" alt="Banner 1">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </div>
+          <div class="carousel-item active">
+            <img src="./images/banner1.jpg" class="d-block w-100" alt="Banner 1">
+            <div class="carousel-caption d-none d-md-block">
+              <p>“A veces creo que hay vida en otros planetas, y a veces creo que no. En cualquiera de los dos casos la conclusión es asombrosa.”</p>
+              <h5>CARL SAGAN</h5>
             </div>
-            <div class="carousel-item">
-                <img src="./images/banner2.jpg" class="d-block w-100" alt="Banner 2">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/banner2.jpg" class="d-block w-100" alt="Banner 2">
+            <div class="carousel-caption d-none d-md-block">
+              <p>“A veces pienso que la prueba más fehaciente de que existe vida inteligente en el universo es que nadie ha intentado contactar con nosotros.”</p>
+              <h5>BILL WATTERSON</h5>
             </div>
-            <div class="carousel-item">
-                <img src="./images/banner3.jpg" class="d-block w-100" alt="Banner 3">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/banner3.jpg" class="d-block w-100" alt="Banner 3">
+            <div class="carousel-caption d-none d-md-block">
+              <p>“La ley no ha sido establecida por el ingenio de los hombres, ni por el mandamiento de los pueblos, sino que es algo eterno que rige el Universo con la sabiduría del imperar y del prohibir.”</p>
+              <h5>CICERON</h5>
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
@@ -148,7 +149,7 @@
             <div class="container subTitulo" id="news">
                 <h3>Últimas Noticias</h3>
             </div>
-            <div id="apinoticias">
+            <div id="apinoticias" class="apinoticias">
                 <div class="container">
                     <div class="row">
                         <Noticia v-for="noticia in noticias" :img="noticia.img" :key="noticia.id" :url="noticia.url"
@@ -170,45 +171,57 @@
             <!-- Cuadro Compañero 1 -->
             <div class="col text-center equipo">
                 <br>
-                <a target="_blank" href="https://github.com/LuisFOsG">
-                    <img src="./images/fotoLuis.jpg" alt="Foto Luis" class="foto">
+                <a target="_blank"  :href="dom1">
+                    <img :src="foto1" alt="Miembro 1" class="foto">
                 </a>
                 <br>
-                <h5 class="nombre">Luis F. Osorio</h5>
-                <p class="rol">Desarrollador Back-end</p>
-                <p>Estudiante de Ingeniería Informática, a punto de iniciar el 5to semestre.</p>
+                <h5 class="nombre" >{{nom1}}</h5>
+                <p class="rol">{{rol1}}</p>
+                <p>{{carac1}}</p>
             </div>
             <!-- Cuadro Compañero 2 -->
             <div class="col text-center equipo">
                 <br>
-                <a target="_blank" href="https://github.com/SergioMelendez99">
-                    <img src="./images/fotoSergio.jpg" alt="Foto Sergio" class="foto">
+                <a target="_blank" :href="dom2">
+                    <img :src="foto2" alt="Miembro 2" class="foto">
                 </a>
                 <br>
-                <h5 class="nombre">Sergio A. Meléndez</h5>
-                <p class="rol">Desarrollador Front-end</p>
-                <p>Estudiante de Ingenieria Civil, ya finalizando la carrera, en busca de practicas.</p>
+                <h5 class="nombre">{{nom2}}</h5>
+                <p class="rol">{{rol2}}</p>
+                <p>{{carac2}}</p>
             </div>
             <!-- Cuadro Compañero 3 -->
             <div class="col text-center equipo">
                 <br>
-                <i class="fas fa-ambulance" style="font-size:150px"></i>
+                <a target="_blank" :href="dom3">
+                    <img :src="foto3" alt="Miembro 3" class="foto">
+                </a>
                 <br>
-                Compañero 3
+                <h5 class="nombre">{{nom3}}</h5>
+                <p class="rol">{{rol3}}</p>
+                <p>{{carac3}}</p>
             </div>
             <!-- Cuadro Compañero 4 -->
             <div class="col text-center equipo">
                 <br>
-                <i class="fas fa-ambulance" style="font-size:150px"></i>
+                <a target="_blank" :href="dom4">
+                    <img :src="foto4" alt="Miembro 4" class="foto">
+                </a>
                 <br>
-                Compañero 4
+                <h5 class="nombre">{{nom4}}</h5>
+                <p class="rol">{{rol4}}</p>
+                <p>{{carac4}}</p>
             </div>
             <!-- Cuadro Compañero 5 -->
             <div class="col text-center equipo">
                 <br>
-                <i class="fas fa-ambulance" style="font-size:150px"></i>
+                <a target="_blank" :href="dom5">
+                    <img :src="foto5" alt="Miembro 5" class="foto">
+                </a>
                 <br>
-                Compañero 5
+                <h5 class="nombre">{{nom5}}</h5>
+                <p class="rol">{{rol5}}</p>
+                <p>{{carac5}}</p>
             </div>
         </div>
     </div>
