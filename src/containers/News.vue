@@ -38,7 +38,12 @@ export default {
 
             let fechaFormat = fecha.getDate() + "/"+ (parseInt(fecha.getMonth()) + 1) + "/" + fecha.getFullYear();
 
-            let tag = info[i].tags[1];
+            try {
+                var tag = info[i].tags[0];
+                tag = tag.charAt(0).toUpperCase() + tag.slice(1);
+            } catch {
+                tag = "Not specified";
+            }
 
             this.noticias.push({
                 img: info[i].featured_image,

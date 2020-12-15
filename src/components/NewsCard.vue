@@ -45,7 +45,6 @@ export default {
     background-color: #0e3f77;
     color:#2f3030;
     transition: 0.2;
-    height: 300px;
 }
 
 .noticia:hover {
