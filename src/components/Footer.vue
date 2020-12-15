@@ -47,7 +47,7 @@
 
 .footer {
     background: linear-gradient(-180deg, #1282DB, #011625);
-    border-radius: 25% 25% 0px 0px;
+    border-radius: 15% 15% 0px 0px;
     color: #fcfcfc;
 }
 
